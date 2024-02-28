@@ -291,3 +291,63 @@ a {
 #resume_btn1 {
     margin-left: 1rem;
 }
+.works {
+    padding: 6rem 0 2rem;
+}
+.works_nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.works_nav-link {
+    margin: 0 1.2rem;
+    font-size: 0.8rem;
+    color: rgba(43, 42, 44, 0.7);
+    text-decoration: none;
+}
+.works_nav-link:hover {
+    text-decoration: underline;
+}
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem 2.8rem;
+}
+.portfolio_col {
+    padding: 1rem;
+    flex-basis: 33.33333%;
+}
+.work {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.2s linear;
+}
+.work:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+.work_image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.work_content {
+    padding: 1rem 0.8rem;
+}
+.work_cat {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    color: #2B2A2C;
+    text-transform: uppercase;
+}
+.work_title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.06rem;
+    color: #2B2A2C;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.text_center{
+    text-align: center;
+}
