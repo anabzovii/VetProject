@@ -6,6 +6,9 @@
     <title>My landing page</title>
     <link rel="stylesheet" href="reset.css"/>
     <link rel="stylesheet" href="style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+          crossorigin="anonymous"/>
 </head>
 <body>
 <header class="header">
@@ -36,14 +39,14 @@
 </header>
 
 <section class="intro">
-    <div class="container">
-        <div class="intro_inner">
-            <div class="intro_content">
-                <h2 class="intro_suptitle">Hello I'm</h2>
-                <h1 class="intro_title">Ana</h1>
-                <div class="intro_text">Nature lover</div>
-                <div class="social">
-                    <a class="social_link" href="#">
+    <div class="container mt-5 pt-5">
+        <div class="row justify-content-between align-items-center intro_inner">
+            <div class="col-md-6 intro_content">
+                <h2 class="intro_suptitle text-info">Hello I'm</h2>
+                <h1 class="intro_title text-dark">Ana</h1>
+                <div class="intro_text mb-2 text-secondary">Nature lover</div>
+                <div class="social mb-2">
+                    <a class="social_link mb-2" href="#">
                         <img class="social_img" src="assets/icons/1.png" alt="">
                         <img class="social_img" src="assets/icons/2.png" alt="">
                         <img class="social_img" src="assets/icons/3.png" alt="">
@@ -53,12 +56,14 @@
                     </a>
                 </div>
 
-                <div class="btn_center2">
-                    <a id="hireme_btn2" class="btn"> CONTACT ME </a>
-                    <button id="resume_btn1" class="btn" type="button"> ONLINE APPOINTMENT</button>
+                <div class="btn_center2 mb-2">
+                    <a id="hireme_btn2" class="btn btn-primary btn--big"> CONTACT ME </a>
+                    <button id="resume_btn1" class="btn btn-secondary btn--big" type="button"> ONLINE APPOINTMENT</button>
                 </div>
             </div>
-            <img class="intro_photo" src="assets/lion.png" alt="">
+            <div class="col-md-6 bg-muted">
+                <img class="intro_photo" src="assets/lion.png" alt="">
+            </div>
         </div>
     </div>
 </section>
@@ -204,42 +209,44 @@
 <section id="about" class="about">
     <div class="container">
 
-        <div class="about_inner">
-            <div class="about_photo">
-                <img class="about_img" src="assets/nature.png" alt="">
-            </div>
-
-            <div class="about_content">
-                <h3 class="about_title"> About </h3>
-                <h2 class="about_bigtitle"> Nature </h2>
-                <div class="about_text">
-                    <p>
-                        Nature, in the broadest sense, is the physical world or universe. "Nature" can
-                        refer to the phenomena of the physical world, and also to life in general. The study of nature
-                        is a large, if not the only, part of science. Although humans are part of nature, human activity
-                        is
-                        often understood as a separate category from other natural phenomena.
-                    </p>
-                    <p>
-                        The word nature is borrowed from the Old French nature and is derived from the Latin word
-                        natura, or "essential qualities, innate disposition", and in ancient times, literally meant
-                        "birth". In
-                        ancient philosophy, natura is mostly used as the Latin translation of the Greek word physis
-                        (φύσις),
-                        which originally related to the intrinsic characteristics of plants, animals, and other features
-                        of
-                        the world to develop of their own accord. The concept of nature as a whole, the physical
-                        universe, is one of several expansions of the original notion; it began with certain core
-                        applications of the word φύσις by pre-Socratic philosophers (though this word had a dynamic
-                        dimension then, especially for Heraclitus), and has steadily gained currency ever since.
-                    </p>
+        <div class="about_inner container">
+            <div class="row">
+                <div class="col-md-6 about_photo">
+                    <img class="about_img" src="assets/nature.png" alt="">
                 </div>
-                <div class="btn_center colon">
-                    <a id="hireme_btn3" class="btn"> CONTACT ME </a>
-                    <button id="resume_btn2" class="btn" type="button"> ONLINE APPOINTMENT</button>
+                <div class="col-md-6 about_content">
+                    <h3 class="about_title text-info"> About </h3>
+                    <h2 class="about_bigtitle text-light bg-dark"> Nature </h2>
+                    <div class="about_text text-secondary">
+                        <p>
+                            Nature, in the broadest sense, is the physical world or universe. "Nature" can
+                            refer to the phenomena of the physical world, and also to life in general. The study of nature
+                            is a large, if not the only, part of science. Although humans are part of nature, human activity
+                            is
+                            often understood as a separate category from other natural phenomena.
+                        </p>
+                        <p>
+                            The word nature is borrowed from the Old French nature and is derived from the Latin word
+                            natura, or "essential qualities, innate disposition", and in ancient times, literally meant
+                            "birth". In
+                            ancient philosophy, natura is mostly used as the Latin translation of the Greek word physis
+                            (φύσις),
+                            which originally related to the intrinsic characteristics of plants, animals, and other features
+                            of
+                            the world to develop of their own accord. The concept of nature as a whole, the physical
+                            universe, is one of several expansions of the original notion; it began with certain core
+                            applications of the word φύσις by pre-Socratic philosophers (though this word had a dynamic
+                            dimension then, especially for Heraclitus), and has steadily gained currency ever since.
+                        </p>
+                    </div>
+                    <div class="btn_center colon">
+                        <a id="hireme_btn3" class="btn btn-primary"> CONTACT ME </a>
+                        <button id="resume_btn2" class="btn btn-secondary" type="button"> ONLINE APPOINTMENT</button>
+                    </div>
                 </div>
             </div>
         </div>
+
 
         <div class="reviews">
             <div class="container">
@@ -400,5 +407,9 @@
     <div class="mascot__text"> Contact me for any question </div>
     <img src="assets/mascot.png" alt="">
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous">
+</script>
 </body>
 </html>
